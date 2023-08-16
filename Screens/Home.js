@@ -1,7 +1,6 @@
 import React from "react";
-import { ImageBackground } from "react-native";
-import { Text, TouchebleOpacity, View, StyleSheet, Image } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Text, TouchableOpacity, View, StyleSheet, Image, StatusBar, ImageBackground, Platform, SafeAreaView } from "react-native"
+
 
 const bgImg = require("../Iss-assets/bg_image.png");
 const meteorsIcon = require("../Iss-assets/meteor_icon.png");
@@ -14,33 +13,29 @@ export default class Home extends React.Component {
 
         }
     }
-    render() {
+    render(){
         return (
             <View style={styles.container}>
                 <SafeAreaView style={styles.droidSafeArea}></SafeAreaView>
-                <ImageBackground> source = {bgImg}
+                <ImageBackground  source = {bgImg}>
                     <View style={styles.titleBar}>
                         <Text style={styles.titleText}>ISS Tracker</Text>
                     </View>
 
                     <View>
-                        <TouchebleOpacity style={styles.routeCard}>
-                            <Image>
-                                source = {issIcon}
-                            </Image>
+                        <TouchableOpacity style={styles.routeCard}>
+                            <Image source = {issIcon}></Image>
                             <Text style={styles.routeText}>Localização da ISS</Text>
+                            <Text style={styles.knowMore}>Saiba mais</Text>
                             <Text>1</Text>
-                            <Text style={styles.knowMore}>Saiba mais</Text>
-                        </TouchebleOpacity>
+                        </TouchableOpacity>
 
-                        <TouchebleOpacity style={styles.routeCard}>
-                            <Image>
-                                source = {meteorsIcon}
-                            </Image>
+                        <TouchableOpacity style={styles.routeCard}>
+                            <Image source = {meteorsIcon}></Image>
                             <Text style={styles.routeText}>Meteoros</Text>
-                            <Text>2</Text>
                             <Text style={styles.knowMore}>Saiba mais</Text>
-                        </TouchebleOpacity>
+                            <Text>2</Text>
+                        </TouchableOpacity>
                     </View>
                 </ImageBackground>
         
