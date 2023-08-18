@@ -12,9 +12,7 @@ export default class ISSLOcation extends React.Component {
         return (
             <View>
                 <Text>Tela de Localização da ISS</Text>
-                <TouchebleOpacity>
-                    
-                </TouchebleOpacity>
+               
             </View>
         )
     }

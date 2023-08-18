@@ -12,9 +12,6 @@ export default class Updates extends React.Component {
         return (
             <View>
                 <Text>Tela de Atualizações</Text>
-                <TouchebleOpacity>
-                    
-                </TouchebleOpacity>
             </View>
         )
     }

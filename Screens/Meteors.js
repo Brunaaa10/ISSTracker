@@ -12,9 +12,6 @@ export default class Meteors extends React.Component {
         return (
             <View>
                 <Text>Tela de Meteoros</Text>
-                <TouchebleOpacity>
-                    
-                </TouchebleOpacity>
             </View>
         )
     }
