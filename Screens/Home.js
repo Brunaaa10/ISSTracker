@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TouchableOpacity, View, StyleSheet, Image, StatusBar, ImageBackground, Platform, SafeAreaView } from "react-native"
-import ISSLOcation from "./ISSLocation";
+import ISSLocation from "./ISSLocation";
 
 const bgImg = require("../Iss-assets/bg_image.png");
 const meteorsIcon = require("../Iss-assets/meteor_icon.png");

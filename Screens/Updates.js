@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, TouchebleOpacity, View, StyleSheet, Image } from "react-native"
+import { Text, TouchableOpacity, View, StyleSheet, Image } from "react-native"
 
 export default class Updates extends React.Component {
     constructor(props) {
