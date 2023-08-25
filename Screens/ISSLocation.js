@@ -3,7 +3,7 @@ import React from "react";
 import { Text, TouchableOpacity, View, StyleSheet, Image, ImageBackground, StatusBar, SafeAreaView, Platform } from "react-native"
 import MapView, { Marker } from "react-native-maps";
 
-export default class ISSLOcation extends React.Component {
+export default class ISSLocation extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
